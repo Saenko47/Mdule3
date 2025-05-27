@@ -75,7 +75,7 @@ namespace MOD3
         public int WorkExperience
         {
             get { return workExperience; }
-            set { workExperience = value >= 0 ? value : 0; }
+            set { workExperience = value; }
         }
         public decimal DesirebleSalary
         {
