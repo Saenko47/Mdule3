@@ -9,7 +9,7 @@ namespace MOD3
 {
     abstract internal class Person
     {
-        const string pattern = @"^[А-Яа-яЁё]+$";
+        const string pattern = @"^[А-ЯІЇЄ][а-яіїє]+$";
         public string name;
         public string surname;
         public Person(string name, string surname)
