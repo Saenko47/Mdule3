@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MOD3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ebba4d8fa7a0259900ccc64dec8eecf90e31a41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5b3314d11b2ad82ee614490e2897d509ce97b4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MOD3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MOD3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

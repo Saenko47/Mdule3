@@ -47,6 +47,7 @@ int directorYear = director.DateOfBirth.Year;
                 if (employees[k].WorkExperience == 0)
                 {
                     candidates[countOfCandidates++] = employees[k];
+                    break;
                 }
             }
             for (int k = 0; k < employees.Length; ++k)
@@ -93,6 +94,7 @@ int directorYear = director.DateOfBirth.Year;
                         {
                             candidates[countOfCandidates++] = employees[k];
                             nameIsFound = true;
+                            break;
                         }
                     }
                 }
@@ -118,6 +120,7 @@ int directorYear = director.DateOfBirth.Year;
                             if (countOfCandidates < candidates.Length)
                             {
                                 candidates[countOfCandidates++] = employees[k];
+                                break;
                             }
                         }
                     }
