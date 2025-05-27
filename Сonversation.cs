@@ -19,17 +19,12 @@ namespace MOD3
         public Employee FindClosestByBirthdate(int i)
         {
             if (i < 0 || i >= employees.Length) return null;
-
-            TimeSpan directorDaye = new TimeSpan(director.DateOfBirth.Ticks);
-            TimeSpan span;
+int directorYear = director.DateOfBirth.Year;
             NearestToDirectro[] nearestToDirectors = new NearestToDirectro[employees.Length];
-            Employee closest = null;
             for (int k = 0; k < employees.Length; ++k)
             {
-                span = new TimeSpan(employees[k].DateOfBirth.Ticks);
-                TimeSpan diff = (span - directorDaye).Duration();
-                nearestToDirectors[k] = new NearestToDirectro(diff, employees[k]);
-
+                int yearDiff = Math.Abs(employees[k].DateOfBirth.Year - directorYear);
+                nearestToDirectors[k] = new NearestToDirectro(yearDiff, employees[k]);
             }
             Array.Sort(nearestToDirectors);
             return nearestToDirectors[0 + i].Employee;
@@ -106,7 +101,7 @@ namespace MOD3
 
                 }
             }
-            int i = -1;
+            int i = 0;
             while (true)
             {
 
