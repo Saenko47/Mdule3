@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MOD3
 {
-    internal class Employee : Person, IComparable<Employee>
+    internal class Employee : Person, IComparable<Employee>, IEquatable<Employee>
     {
         const string datepattern = @"^\d{4},\d{2},\d{2}$";
         const string adressPattern = @"^вул\. ([А-ЯІЇЄ][а-яіїє']+)( [А-ЯІЇЄ][а-яіїє']+)* буд\. \d+ кв\. \d{1,3} $";
@@ -153,8 +153,13 @@ namespace MOD3
         }
         public override string ToString()
         {
-            return $"{name} {surname} {fathername} {dateOfBirth.ToString("yyyy,MM,dd")} {workExperience} {desirebleSalary} {adress} {string.Join(", ", hobies)}";
+            return $"name:{name} {surname} {fathername} date of birth:{dateOfBirth.ToString("yyyy,MM,dd")} Work Exp:{workExperience} Desireble Salary{desirebleSalary} {adress} Hobies:{string.Join(", ", hobies)}";
 
+        }
+        public bool Equals(Employee? other)
+        {
+            if (other == null) return false;
+            return this.name == other.name && this.surname == other.surname && this.fathername == other.fathername && this.dateOfBirth == other.dateOfBirth && this.workExperience == other.workExperience && this.desirebleSalary == other.desirebleSalary && this.adress == other.adress && this.building == other.building && this.apartment == other.apartment;
         }
     }
 }

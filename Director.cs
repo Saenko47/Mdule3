@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MOD3
 {
-    internal class Director : Person
+    internal class Director : Person, IEquatable<Director>
     {
         const string datepattern = @"^\d{4},\d{2},\d{2}$";
         DateTime dateOfBirth;
@@ -21,6 +21,11 @@ namespace MOD3
             get { return dateOfBirth; }
             set { dateOfBirth = Regex.IsMatch(value.ToString("yyyy,MM,dd"), datepattern) ? value : new DateTime(2006, 02, 07); }
 
+        }
+        public bool Equals(Director? other)
+        {
+            if (other == null) return false;
+            return this.Name == other.Name && this.Surname == other.Surname && this.DateOfBirth == other.DateOfBirth;
         }
     }
 }

@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Employee[] employees = CreateEmployee.CreateRandomEmployee(15);
+            Employee[] employees = CreateEmployee.CreateRandomEmployee(100);
             Director director = new Director("Олександр", "Шевченко", new DateTime(1980, 5, 15));
             Сonversation conversation = new Сonversation(employees, director);
             conversation.GetCandidateToConversation();

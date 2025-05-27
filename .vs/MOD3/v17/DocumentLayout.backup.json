@@ -15,28 +15,28 @@
       "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:createemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\father.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:father.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\mother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:mother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\father.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:father.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|c:\\users\\aleks\\source\\repos\\mod3\\mother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4B61EB-6097-4A62-BF4A-D82F787A2973}|MOD3.csproj|solutionrelative:mother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "NearestToDirectro.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\MOD3\\NearestToDirectro.cs",
               "RelativeToolTip": "NearestToDirectro.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA5wC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T15:39:13.179Z",
               "EditorCaption": ""
@@ -82,27 +82,27 @@
               "RelativeDocumentMoniker": "\u0421onversation.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\MOD3\\\u0421onversation.cs",
               "RelativeToolTip": "\u0421onversation.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAgwBsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAqwJsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T15:03:51.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Director.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\MOD3\\Director.cs",
               "RelativeDocumentMoniker": "Director.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\MOD3\\Director.cs",
               "RelativeToolTip": "Director.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T14:13:35.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Father.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\MOD3\\Father.cs",
               "RelativeDocumentMoniker": "Father.cs",
@@ -110,11 +110,12 @@
               "RelativeToolTip": "Father.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T14:12:41.474Z"
+              "WhenOpened": "2025-05-27T14:12:41.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Mother.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\MOD3\\Mother.cs",
               "RelativeDocumentMoniker": "Mother.cs",
@@ -126,13 +127,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\MOD3\\Employee.cs",
               "RelativeDocumentMoniker": "Employee.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\MOD3\\Employee.cs",
               "RelativeToolTip": "Employee.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T14:11:14.63Z",
               "EditorCaption": ""
@@ -151,16 +152,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\MOD3\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\MOD3\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:48:56.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:48:56.151Z"
             }
           ]
         }

@@ -8,9 +8,9 @@ namespace MOD3
 {
     internal class NearestToDirectro: IComparable<NearestToDirectro>
     {
-        public double near;
+        public int near;
         public Employee employee;
-        private object value;
+        
 
         public NearestToDirectro(int near, Employee employee)
         {
@@ -18,13 +18,9 @@ namespace MOD3
             this.employee = employee;
         }
 
-        public NearestToDirectro(object value, Employee employee)
-        {
-            this.value = value;
-            this.employee = employee;
-        }
+        
 
-        public double Near
+        public int Near
         {
             get { return near; }
             set

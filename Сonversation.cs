@@ -27,19 +27,20 @@ int directorYear = director.DateOfBirth.Year;
                 nearestToDirectors[k] = new NearestToDirectro(yearDiff, employees[k]);
             }
             Array.Sort(nearestToDirectors);
-            return nearestToDirectors[0 + i].Employee;
+            return nearestToDirectors[i].Employee;
 
         }
         public void GetCandidateToConversation()
         {
 
-            int countOfCandidates = 0;
+            
             Employee[] candidates = new Employee[5];
+            int countOfCandidates = 0;
             Array.Sort(employees);
             candidates[countOfCandidates++] = employees[employees.Length - 1];
             for (int k = 0; k < employees.Length; ++k)
             {
-                if (employees[k].workExperience == 0)
+                if (employees[k].WorkExperience == 0)
                 {
                     candidates[countOfCandidates++] = employees[k];
                 }
@@ -57,9 +58,15 @@ int directorYear = director.DateOfBirth.Year;
                             break;
                         }
                     }
-                    if (isDuplicate) continue;
-                    candidates[countOfCandidates++] = employees[k];
-                    break;
+                    if (isDuplicate) { continue; }
+                    else
+                    {
+                        if (countOfCandidates < candidates.Length)
+                        {
+                            candidates[countOfCandidates++] = employees[k];
+                            break;
+                        }
+                    }
                 }
             }
             for (int k = 0; k < employees.Length; ++k)
@@ -75,9 +82,15 @@ int directorYear = director.DateOfBirth.Year;
                             break;
                         }
                     }
-                    if (isDuplicate) continue;
-                    candidates[countOfCandidates++] = employees[k];
-                    nameIsFound = true;
+                    if (isDuplicate) { continue; }
+                    else
+                    {
+                        if (countOfCandidates < candidates.Length)
+                        {
+                            candidates[countOfCandidates++] = employees[k];
+                            nameIsFound = true;
+                        }
+                    }
                 }
             }
             if (!nameIsFound)
@@ -95,8 +108,14 @@ int directorYear = director.DateOfBirth.Year;
                                 break;
                             }
                         }
-                        if (isDuplicate) continue;
-                        candidates[countOfCandidates++] = employees[k];
+                        if (isDuplicate) { continue; }
+                        else
+                        {
+                            if (countOfCandidates < candidates.Length)
+                            {
+                                candidates[countOfCandidates++] = employees[k];
+                            }
+                        }
                     }
 
                 }
@@ -104,20 +123,21 @@ int directorYear = director.DateOfBirth.Year;
             int i = 0;
             while (true)
             {
-
+                
                 Employee closest = FindClosestByBirthdate(i++);
+                if (closest == null) break;
                 bool isDuplicate = false;
                 foreach (var cand in candidates)
                 {
-
-                    if (closest == cand)
+                    if (cand != null && closest == cand)
                     {
                         isDuplicate = true;
                         break;
                     }
                 }
-                if (!isDuplicate)
+                if (!isDuplicate && countOfCandidates < candidates.Length)
                 {
+                    
                     candidates[countOfCandidates++] = closest;
                     break;
                 }
@@ -132,8 +152,9 @@ int directorYear = director.DateOfBirth.Year;
             Console.WriteLine("Кандидати на розмову:");
             foreach (var cand in candidates)
             {
+               
                 Console.WriteLine($"{cand.Name} {cand.Surname}, {cand.DateOfBirth.ToShortDateString()}, {cand.WorkExperience} років досвіду, бажана зарплата: {cand.DesirebleSalary} грн");
-
+              
             }
             Console.WriteLine($"Кандидатів на розмову: {countOfCandidates}");
             Console.WriteLine($"////////////////////////");
