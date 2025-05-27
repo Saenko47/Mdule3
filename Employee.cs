@@ -35,7 +35,7 @@ namespace MOD3
             this.dad = dad;
             this.mom = mom;
         }
-
+        
         public int GetBuilding()
         {
             string[] parts = adress.Split(' ');

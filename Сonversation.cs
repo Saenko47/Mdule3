@@ -41,12 +41,28 @@ namespace MOD3
             int countOfCandidates = 0;
             Employee[] candidates = new Employee[5];
             Array.Sort(employees);
-            candidates[countOfCandidates++] = employees[0];
             candidates[countOfCandidates++] = employees[employees.Length - 1];
+            for (int k = 0; k < employees.Length; ++k)
+            {
+                if (employees[k].workExperience == 0)
+                {
+                    candidates[countOfCandidates++] = employees[k];
+                }
+            }
             for (int k = 0; k < employees.Length; ++k)
             {
                 if (employees[k].Building % 2 != 0 && employees[k].Apartment % 2 == 0)
                 {
+                    bool isDuplicate = false;
+                    foreach (var cand in candidates)
+                    {
+                        if (employees[k] == cand)
+                        {
+                            isDuplicate = true;
+                            break;
+                        }
+                    }
+                    if (isDuplicate) continue;
                     candidates[countOfCandidates++] = employees[k];
                     break;
                 }
@@ -115,6 +131,9 @@ namespace MOD3
                     continue;
                 }
             }
+            Employee[] temp = new Employee[countOfCandidates];
+            Array.Copy(candidates, temp, countOfCandidates);
+            candidates = temp;
             Console.WriteLine("Кандидати на розмову:");
             foreach (var cand in candidates)
             {
