@@ -120,7 +120,7 @@ name = names[random.Next(0,names.Length)];
                 }
                 workExperience = random.Next(0, 51);
                 desirebleSalary = (decimal)(random.Next(1000, 10000) + random.NextDouble());
-                employees[k] = new Employee(name, surname, fatheerName, birthDate, workExperience, desirebleSalary, adress, hobbies, new Father(fatheerName.Substring(0, fatheerName.Length), surname), new Mother(names[random.Next(0,names.Length)], surname));
+                employees[k] = new Employee(name, surname, fatheerName, birthDate, workExperience, desirebleSalary, adress, hobbies, new Father(fatheerName, surname), new Mother(names[random.Next(0,names.Length)], surname));
 
             }
             return employees;

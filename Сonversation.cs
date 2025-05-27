@@ -36,8 +36,12 @@ int directorYear = director.DateOfBirth.Year;
             
             Employee[] candidates = new Employee[5];
             int countOfCandidates = 0;
-            Array.Sort(employees);
-            candidates[countOfCandidates++] = employees[employees.Length - 1];
+            Employee[] temp = new Employee[employees.Length];
+            Array.Copy(employees, temp, employees.Length);
+            Array.Sort(temp);
+           
+
+            candidates[countOfCandidates++] = temp[temp.Length - 1];
             for (int k = 0; k < employees.Length; ++k)
             {
                 if (employees[k].WorkExperience == 0)
@@ -97,7 +101,7 @@ int directorYear = director.DateOfBirth.Year;
             {
                 for (int k = 0; k < employees.Length; ++k)
                 {
-                    if (employees[k].Name == employees[k].dad.Name)
+                    if (employees[k].dad != null && employees[k].Name == employees[k].dad.Name)
                     {
                         bool isDuplicate = false;
                         foreach (var cand in candidates)
@@ -146,9 +150,9 @@ int directorYear = director.DateOfBirth.Year;
                     continue;
                 }
             }
-            Employee[] temp = new Employee[countOfCandidates];
-            Array.Copy(candidates, temp, countOfCandidates);
-            candidates = temp;
+            Employee[] temp1 = new Employee[countOfCandidates];
+            Array.Copy(candidates, temp1, countOfCandidates);
+            candidates = temp1;
             Console.WriteLine("Кандидати на розмову:");
             foreach (var cand in candidates)
             {
