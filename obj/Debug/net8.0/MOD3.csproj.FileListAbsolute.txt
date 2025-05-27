@@ -1,0 +1,15 @@
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.AssemblyInfoInputs.cache
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.AssemblyInfo.cs
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.csproj.CoreCompileInputs.cache
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.sourcelink.json
+C:\Users\aleks\source\repos\MOD3\bin\Debug\net8.0\MOD3.exe
+C:\Users\aleks\source\repos\MOD3\bin\Debug\net8.0\MOD3.deps.json
+C:\Users\aleks\source\repos\MOD3\bin\Debug\net8.0\MOD3.runtimeconfig.json
+C:\Users\aleks\source\repos\MOD3\bin\Debug\net8.0\MOD3.dll
+C:\Users\aleks\source\repos\MOD3\bin\Debug\net8.0\MOD3.pdb
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.dll
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\refint\MOD3.dll
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.pdb
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\MOD3.genruntimeconfig.cache
+C:\Users\aleks\source\repos\MOD3\obj\Debug\net8.0\ref\MOD3.dll

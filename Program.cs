@@ -1,0 +1,14 @@
+﻿namespace MOD3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee[] employees = CreateEmployee.CreateRandomEmployee(10);
+            Director director = new Director("Олександр", "Шевченко", new DateTime(1980, 5, 15));
+            Сonversation conversation = new Сonversation(employees, director);
+            conversation.GetCandidateToConversation();
+
+        }
+    }
+}
