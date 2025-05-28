@@ -30,129 +30,108 @@ int directorYear = director.DateOfBirth.Year;
             return nearestToDirectors[i].Employee;
 
         }
-        public void GetCandidateToConversation()
+        public Employee GetCandidateByExp()
         {
-
-            
-            Employee[] candidates = new Employee[5];
-            int countOfCandidates = 0;
             Employee[] temp = new Employee[employees.Length];
             Array.Copy(employees, temp, employees.Length);
             Array.Sort(temp);
-           
-
-            candidates[countOfCandidates++] = temp[temp.Length - 1];
+            return temp[temp.Length - 1];
+        }
+        public Employee GetCandidateByZeroExp(Employee[] candidates)
+        {
             for (int k = 0; k < employees.Length; ++k)
             {
-                if (employees[k].WorkExperience == 0)
+                if (!candidates.Contains(employees[k]) && employees[k].WorkExperience == 0)
                 {
-                    candidates[countOfCandidates++] = employees[k];
-                    break;
+                    return employees[k];
                 }
+               
             }
+            return null;
+        }
+        public Employee GetCandidateByBuilding(Employee[] candidates)
+        {
             for (int k = 0; k < employees.Length; ++k)
             {
-                if (employees[k].Building % 2 != 0 && employees[k].Apartment % 2 == 0)
+                if (!candidates.Contains(employees[k]) && employees[k].Building % 2 != 0 && employees[k].Apartment % 2 == 0)
                 {
-                    bool isDuplicate = false;
-                    foreach (var cand in candidates)
-                    {
-                        if (employees[k] == cand)
-                        {
-                            isDuplicate = true;
-                            break;
-                        }
-                    }
-                    if (isDuplicate) { continue; }
-                    else
-                    {
-                        if (countOfCandidates < candidates.Length)
-                        {
-                            candidates[countOfCandidates++] = employees[k];
-                            break;
-                        }
-                    }
+                    return employees[k];
                 }
             }
+            return null;
+        }
+        public Employee GetCandidateByName(Employee[] candidates)
+        {
+            bool isFound = false;
             for (int k = 0; k < employees.Length; ++k)
             {
-                if (employees[k].Name == director.Name)
+                if (!candidates.Contains(employees[k]) && employees[k].Name == director.Name)
                 {
-                    bool isDuplicate = false;
-                    foreach (var cand in candidates)
-                    {
-                        if (employees[k] == cand)
-                        {
-                            isDuplicate = true;
-                            break;
-                        }
-                    }
-                    if (isDuplicate) { continue; }
-                    else
-                    {
-                        if (countOfCandidates < candidates.Length)
-                        {
-                            candidates[countOfCandidates++] = employees[k];
-                            nameIsFound = true;
-                            break;
-                        }
-                    }
+                    isFound = true;
+                    return employees[k];
+                    
                 }
             }
-            if (!nameIsFound)
+            if (!isFound)
             {
                 for (int k = 0; k < employees.Length; ++k)
                 {
-                    if (employees[k].dad != null && employees[k].Name == employees[k].dad.Name)
+                    if (!candidates.Contains(employees[k]) && employees[k].dad != null && employees[k].Name == employees[k].dad.Name)
                     {
-                        bool isDuplicate = false;
-                        foreach (var cand in candidates)
-                        {
-                            if (employees[k] == cand)
-                            {
-                                isDuplicate = true;
-                                break;
-                            }
-                        }
-                        if (isDuplicate) { continue; }
-                        else
-                        {
-                            if (countOfCandidates < candidates.Length)
-                            {
-                                candidates[countOfCandidates++] = employees[k];
-                                break;
-                            }
-                        }
+                        return employees[k];
                     }
-
                 }
+                
             }
+            return null;
+        }
+        public Employee GetCandidateByDate(Employee[] candidates) {
             int i = 0;
             while (true)
             {
-                
-                Employee closest = FindClosestByBirthdate(i++);
+
+                Employee closest = FindClosestByBirthdate(i);
                 if (closest == null) break;
-                bool isDuplicate = false;
-                foreach (var cand in candidates)
+                if (!candidates.Contains(employees[i]))
                 {
-                    if (cand != null && closest == cand)
-                    {
-                        isDuplicate = true;
-                        break;
-                    }
+                    return closest;
                 }
-                if (!isDuplicate && countOfCandidates < candidates.Length)
-                {
-                    
-                    candidates[countOfCandidates++] = closest;
-                    break;
-                }
-                else
-                {
-                    continue;
-                }
+                ++i;
+               
             }
+            return null;
+        }
+        public void GetCandidateToConversation()
+        {
+
+            Employee temp;
+            Employee[] candidates = new Employee[5];
+            int countOfCandidates = 0;
+           
+           candidates[countOfCandidates++] = GetCandidateByExp();
+            temp = GetCandidateByZeroExp(candidates);
+            if (temp != null)
+            {
+                candidates[countOfCandidates++] = temp;
+            }
+            temp = GetCandidateByBuilding(candidates);
+            if (temp != null)
+            {
+                candidates[countOfCandidates++] = temp;
+            }
+            temp = GetCandidateByName(candidates);
+            if (temp != null)
+            {
+                candidates[countOfCandidates++] = temp;
+            }
+            temp = GetCandidateByDate(candidates);
+            if (temp != null)
+            {
+                candidates[countOfCandidates++] = temp;
+            }
+
+
+
             Employee[] temp1 = new Employee[countOfCandidates];
             Array.Copy(candidates, temp1, countOfCandidates);
             candidates = temp1;
